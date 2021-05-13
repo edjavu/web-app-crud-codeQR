@@ -1,0 +1,137 @@
+
+/* Generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* NavBar */
+.nav{
+    margin-bottom: 30px;
+}
+
+.nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+}
+
+.nav ul li{
+    float: right;
+    
+}
+
+.nav ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.nav ul li a:hover:not(.active){
+    background-color: #111;
+}
+
+.nav ul li a.active{
+    background-color: #4CAF50;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px){
+    .nav ul li.right,
+    .nav ul li{float: none;}
+}
+
+/* Footer */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #111;
+    color: white;
+    text-align: center;
+}
+
+/* index */
+.formulario-1{
+    width: 70%;
+    height: 300px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin-left: 200px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+
+/* Maquinas registradas Tables */
+#maquinas {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#maquinas td, #maquinas th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#maquinas tr:nth-child(even){background-color: #f2f2f2;}
+
+#maquinas tr:hover {background-color: #ddd;}
+
+#maquinas th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+/* Maquina caracteristicas */
+.formulario-2{
+    width: 70%;
+    height: 300px;
+    margin: auto;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
